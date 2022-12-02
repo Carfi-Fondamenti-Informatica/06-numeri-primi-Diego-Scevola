@@ -17,7 +17,3 @@ int main() {
         cout<<"numero non primo"<<endl;
     return 0;
 }
-
-bool primi(int a) {
-    return false;
-}
