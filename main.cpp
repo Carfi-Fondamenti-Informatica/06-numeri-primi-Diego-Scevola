@@ -1,7 +1,5 @@
 #include <iostream>
-
-bool primi(int a);
-
+#include "l1b.h"
 using namespace std;
 
 int main() {
