@@ -1,17 +1,13 @@
-#include <iostream>
-#include "l1b.h"
+#include<iostream>
 using namespace std;
 
-int main() {
-    int a;
-    bool b;
+bool isp(int i, int n){
+    cout<<i<<"\t "<<n%i<<endl;
+    return n%i==0 ? n==i : isp(i+1,n);
+}//isp
 
-    cin>>a;
-    b= primi(a);
-
-    if(b== true)
-        cout<<"numero primo"<<endl;
-    else if(b== false)
-        cout<<"numero non primo"<<endl;
-    return 0;
-}
+main(){
+    int num;
+    cout<<"ins.num:";cin>>num;
+    isp(2,num) ? cout<<"primo" :cout<<"NON primo";
+}//main
