@@ -2,16 +2,16 @@
 #include "l1b.h"
 using namespace std;
 
-int main() {
+int main(){
     int a;
     bool b;
-
+    
     cin>>a;
-    b= primi(a);
-
-    if(b== true)
+    b=primi(a);
+    
+    if(b==true)
         cout<<"numero primo"<<endl;
-    else if(b== false)
+    else if(b==false)
         cout<<"numero non primo"<<endl;
     return 0;
-}
+      }
